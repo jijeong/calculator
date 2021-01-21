@@ -1,0 +1,79 @@
+main {
+    width : 400px;
+    background: black;
+    margin: auto;
+    padding : 25px;
+}
+
+* {
+    box-sizing: border-box;
+    color:black;   
+}
+button {
+    height: 77.75px;
+    border: none;
+    outline: none;
+    color : white;
+    background-color: #444444;
+    transition: all 0.1s ease-in;
+    font-size: 30px;
+}
+
+button:active{
+    opacity: .9;
+}
+
+button:hover:not(.ac):not(.calc) {
+    border: none;
+    outline:none;
+    background-color: #5a5a5a;
+    }
+
+button:not(.except){
+    border-radius: 50%;
+}
+
+input {
+    height: 150px;
+    margin-bottom: 25px;
+    width: 100%;
+    text-align: right;
+    border: none;    
+    background: #5B5B5D;
+    background-color: black;
+    padding-right: 1rem;
+    font-size: 3rem;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap : 13px;
+
+}
+
+.ac {
+    grid-column: 1/4;
+    background-color: #A2A2A2;
+}
+
+
+.ac:hover {
+    background-color:  rgb(182, 182, 182);
+}
+
+.zero {
+    grid-column: 1/3;
+}
+
+.except {
+    border-radius: 40px;
+}
+
+.calc {
+    background-color: #FF8F01;
+}
+
+.calc:hover {
+    background-color: rgb(255, 166, 50);
+}
